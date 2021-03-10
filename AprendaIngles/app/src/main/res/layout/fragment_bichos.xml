@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor_fundo_bichos"
+    tools:context=".fragments.BichosFragment">
+
+    <ImageView
+        android:id="@+id/imageCao"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:src="@drawable/cao"
+        app:layout_constraintBottom_toTopOf="@+id/imageLeao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageGato"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/gato"
+        app:layout_constraintBottom_toTopOf="@+id/imageMacaco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageLeao"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:src="@drawable/leao"
+        app:layout_constraintBottom_toTopOf="@+id/imageOvelha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCao" />
+
+    <ImageView
+        android:id="@+id/imageMacaco"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/macaco"
+        app:layout_constraintBottom_toTopOf="@+id/imageVaca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageGato" />
+
+    <ImageView
+        android:id="@+id/imageOvelha"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:src="@drawable/ovelha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLeao" />
+
+    <ImageView
+        android:id="@+id/imageVaca"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/vaca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMacaco" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
